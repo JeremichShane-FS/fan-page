@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Poppins:wght@400;800&display=swap");
+
+/**************************************
+ * CSS reset
+ **************************************/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font: inherit;
+  text-decoration: none;
+}
+
+figcaption,
+figure,
+footer,
+header,
+img,
+section {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  font-family: "Poppins", sans-serif;
+  background-color: #fffbfe;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+img {
+  max-width: 100%;
+}
+
+figure {
+  display: table;
+  margin: 0 auto;
+}
+
+figcaption {
+  font-size: 0.75rem;
+  text-align: right;
+  margin-bottom: 2rem;
+
+  & a:hover {
+    color: #333;
+  }
+}
+
+/**************************************
+ * End of CSS Reset
+ **************************************/
+
+/* Header Styles */
+.header {
+  background-color: #2a2829;
+  color: #fff;
+  padding: 0.625rem 0;
+  text-align: center;
+
+  .header__title {
+    font-size: 3rem;
+    font-family: "Oswald", sans-serif;
+    letter-spacing: 0.25rem;
+  }
+}
+
+/* Container Styles */
+.container {
+  max-width: 75rem;
+  margin: 1.25rem auto;
+  padding: 1.25rem;
+  background-color: #d0cfcf;
+  border-radius: 10px;
+  box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.2);
+}
+
+/* About Section Styles */
+.about {
+  margin: 2rem 2rem 4rem;
+
+  .about__title {
+    width: max-content;
+    margin: 0 auto;
+    font-size: 2rem;
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+    border-bottom: 2px solid #2a2829;
+  }
+  .about__image {
+    margin: 0 auto;
+    border-radius: 10px;
+  }
+  .about__description {
+    margin-top: 0.625rem;
+  }
+  .about__link {
+    display: block;
+    width: max-content;
+    margin: 2rem auto;
+    border-radius: 10px;
+    text-decoration: none;
+    box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.2);
+  }
+}
+
+/* Favorite Section Styles */
+.favorite {
+  .favorite__title {
+    width: max-content;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+    border-bottom: 2px solid #2a2829;
+  }
+  .favorite__image {
+    margin: auto;
+    border-radius: 10px;
+  }
+  .favorite__reasons {
+    margin-top: 0.625rem;
+    list-style-type: square;
+    padding-left: 1.5rem;
+
+    .favorite__reason {
+      margin: 2rem 0;
+
+      & strong {
+        font-size: 1.25rem;
+        font-family: "Oswald", sans-serif;
+        font-weight: 800;
+      }
+    }
+  }
+  & p:nth-child(4) {
+    padding-left: 1rem;
+  }
+}
+
+/* Button Styles */
+.button {
+  background-color: #2a2829;
+  padding: 1rem 2.75rem;
+  margin: auto;
+  font-size: 1.25rem;
+  font-family: "Oswald", sans-serif;
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+
+  &:hover {
+    color: #000;
+    background-color: #fffbfe;
+    transform: scale(1.05);
+  }
+}
+
+/* Footer Styles */
+.footer {
+  text-align: center;
+  margin-top: 1.25rem;
+  padding-top: 0.625rem;
+  border-top: 1px solid #000;
+
+  .footer__text {
+    margin: 0;
+    font-size: 0.9rem;
+  }
+}
